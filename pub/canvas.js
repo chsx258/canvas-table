@@ -138,12 +138,13 @@ function new_canvas(div,width,height,speed, lines) {
         }
         paper.stroke();
     }
-
     function quadraticBezier(p0, p1, p2, t) {
         var k = 1 - t;
         return k * k * p0 + 2 * (1 - t) * t * p1 + t * t * p2;
 
     }
+
+    // this part of count the bezier curve uses the idea of this blog :https://juejin.cn/post/6844903829989769223
 
     function backgroundliens() {
         paper.strokeStyle = 'grey';
