@@ -29,7 +29,7 @@ let lines = [
 // xedge,yedge: the edges of the axis
 // xgap,ygap: the gap of backgroundlines
 let background = {
-    x:700,
+    x:1000,
     y:30,
     xedge:40,
     yedge:30,
