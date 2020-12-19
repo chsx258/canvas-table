@@ -1,3 +1,4 @@
+(function(global, document){
 function new_canvas(div,width,height,speed, lines,background,autoredraw=false,colorPanel=false,
                     zoomPanel=false,speedPanel=false, dataPanel = false) {
     //paras
@@ -478,3 +479,8 @@ function new_canvas(div,width,height,speed, lines,background,autoredraw=false,co
         paper.fillText(yname,xedge,yedge);
     }
 }
+
+        global.new_canvas = global.new_canvas || new_canvas;
+}
+)
+(window, window.document);

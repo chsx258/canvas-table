@@ -36,4 +36,3 @@ let background = {
     xname:'name of x-axis',
     yname:'name of y-axis'
 };
-new_canvas(div,1200,500, 5,lines,background,true);
