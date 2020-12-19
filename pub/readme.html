@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Readme</title>
+</head>
+<body>
+<h1>Canvas-Chart-sunxia54</h1>
+
+<p>This library focus on creating a chart with canvas animation. With this library,
+    developers can easily turn there data into a chart with 100% java script, which will be
+    stable and can work on different browsers.</p>
+
+<h1>How to use</h1>
+
+<p>To use this library,  CanvasChart.js should be included in the html. To create a chart,
+    you should call function new_canvas(). There are several parameters of this function.</p>
+
+<p>useage:    </p>
+
+<pre><code>new_canvas(div,width,height,speed,lines,
+background,autoredraw,colorPanel,zoomPanel,speedPanel,dataPanel)</code></pre>
+
+<h1>API:</h1>
+
+<p>div: the destination div that will contain the canvas created.</p>
+
+<p>width: the width of the canvas created.</p>
+
+<p>height: the height of the canvas created.</p>
+
+<p>speed: the speed of the drawing animation (recommend to start with 5).</p>
+
+<p>lines: a list that contains all the information needed for each line.</p>
+
+<p>[line1,line2..]</p>
+
+<p>Each line should be an object, which contains</p>
+
+<pre><code>{
+
+    name: the name of the line,
+
+    shape: line/curve/dot
+
+    data: all the data points of the line,which should be a list of
+    tuples, for example
+
+    [[0,0],[100,100],[150,300],[200,200]]
+
+    color: color of the line
+
+
+}</code></pre>
+
+<p>background: an object that contains needed parameters for creating background line of the canvas.</p>
+
+<pre><code>{
+    x: the start x-axis position of legend, int
+    y: the height of each legend, int
+    xedge: the edge of x-axis, int
+    yedge: the edge of y-axis, int
+    xgap: the gap between horizional lines, int
+    ygap: the gap between vertical lines, int
+    xname: name of x-axis, string
+    yname: name of y-axis, string
+}</code></pre>
+
+<p> autoredraw: Will redraw the chart after all lines finished if true. Default false.</p>
+
+<p> colorPanel:Open the color select panel for user if true. Default false.</p>
+
+<p> zoomPanel:Open the zoom panel for user if true. Default false.</p>
+
+<p> speedPanel:Open the speed control panel for user if true. Default false.</p>
+
+<p> dataPanel:Open the realtime data display panel for user if true. Default fasle.</p>
+
+<p> </p>
+</body>
+
+</html>

@@ -4,15 +4,16 @@ This library focus on creating a chart with canvas animation. With this library,
 developers can easily turn there data into a chart with 100% java script, which will be 
 stable and can work on different browsers.
 
-
+#How to use
 To use this library,  CanvasChart.js should be included in the html. To create a chart, 
 you should call function new_canvas(). There are several parameters of this function.
 
-useage: new_canvas(div,width,height,speed,lines,background,
+useage:    
 
-autoredraw,colorPanel,zoomPanel,speedPanel,dataPanel)
+    new_canvas(div,width,height,speed,lines,
+    background,autoredraw,colorPanel,zoomPanel,speedPanel,dataPanel)
 
-@API:
+#API:
 
 div: the destination div that will contain the canvas created.
 

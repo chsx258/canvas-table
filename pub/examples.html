@@ -14,9 +14,83 @@
 
 </head>
 <body>
-    <div id="mycanvas" width="3000" height="1080"></div>
+    <h1> Chart with auto-redraw</h1>
+    <p>var div = document.getElementById('xxx')</p>
+    <p> new_canvas(div,xxx,xxx,x,lines,background,true)</p>
+    <div id="chart1" width="3000" height="1080"></div>
     <script src='CanvasChart.js'></script>
     <script src='example1.js'></script>
+    <br>
+    <h1>Chart without auto-redraw</h1>
+    <p>var div = document.getElementById('xxx')</p>
 
+    <p> new_canvas(div,xxx,xxx,x,lines,background)</p>
+
+    <div id="chart2" width="3000" height="1080"></div>
+    <script src='CanvasChart.js'></script>
+    <script>
+        var div = document.getElementById('chart2');
+
+
+        new_canvas(div,1200,500, 5,lines,background);
+    </script>
+
+    <br>
+    <h1>Chart with zoom-Panel</h1>
+    <p>var div = document.getElementById('xxx')</p>
+
+    <p> new_canvas(div,xxx,xxx,x,lines,background,false,false,true)</p>
+
+    <div id="chart5" width="3000" height="1080"></div>
+    <script src='CanvasChart.js'></script>
+    <script>
+        var div = document.getElementById('chart5');
+
+
+        new_canvas(div,1200,500, 5,lines,background,false,false,true);
+    </script>
+    <br>
+    <h1>Chart with speed-Panel</h1>
+    <p>var div = document.getElementById('xxx')</p>
+
+    <p> new_canvas(div,xxx,xxx,x,lines,background,false,false,false,true)</p>
+
+    <div id="chart6" width="3000" height="1080"></div>
+    <script src='CanvasChart.js'></script>
+    <script>
+        var div = document.getElementById('chart6');
+
+
+        new_canvas(div,1200,500, 5,lines,background,false,false,false,true);
+    </script>
+    <br>
+    <h1>Chart with data-Panel</h1>
+    <p>var div = document.getElementById('xxx')</p>
+
+    <p> new_canvas(div,xxx,xxx,x,lines,background,false,false,false,false,true)</p>
+
+    <div id="chart7" width="3000" height="1080"></div>
+    <script src='CanvasChart.js'></script>
+    <script>
+        var div = document.getElementById('chart7');
+
+
+        new_canvas(div,1200,500, 5,lines,background,false,false,false,false,true);
+    </script>
+    <br>
+
+    <h1>Chart with color-Panel</h1>
+    <p>var div = document.getElementById('xxx')</p>
+
+    <p> new_canvas(div,xxx,xxx,x,lines,background,false,true)</p>
+
+    <div id="chart4" width="3000" height="1080"></div>
+    <script src='CanvasChart.js'></script>
+    <script>
+        var div = document.getElementById('chart4');
+
+
+        new_canvas(div,1200,500, 5,lines,background,false,true);
+    </script>
 </body>
 </html>

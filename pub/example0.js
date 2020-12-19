@@ -1,6 +1,6 @@
 
 
-var div = document.getElementById('mycanvas');
+var div = document.getElementById('chart0');
 
 
 let lines = [

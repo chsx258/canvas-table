@@ -247,7 +247,7 @@ function new_canvas(div,width,height,speed, lines,background,autoredraw=false,co
     text.cols = 30;
     text.innerText = 'x: '+xNow+" y: "+yNow;
 
-    dataForm.appendChild(submit1);
+    //form.appendChild(submit1);
 
 
 

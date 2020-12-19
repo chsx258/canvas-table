@@ -1,4 +1,4 @@
-var div = document.getElementById('mycanvas');
+var div = document.getElementById('chart1');
 
 
 let lines = [
@@ -32,6 +32,8 @@ let background = {
     xedge:100,
     yedge:30,
     xgap:15,
-    ygap:15
+    ygap:15,
+    xname:'name of x-axis',
+    yname:'name of y-axis'
 };
-new_canvas(div,1200,500, 5,lines,background,true,true,true,true,true);
+new_canvas(div,1200,500, 5,lines,background,true);
